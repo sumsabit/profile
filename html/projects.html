@@ -9,7 +9,16 @@
 
 
     </head>
-<body>
+<body class="bg-surface text-text [body:has(input:checked)]:bg-gray-900 [body:has(input:checked)]:text-white">
+  
+<label class="fixed top-4 right-4 z-50 cursor-pointer">
+  <input type="checkbox" class="peer hidden">
+
+  <span class="px-3 py-1 rounded-full bg-gray-200 text-black 
+               peer-checked:bg-gray-800 peer-checked:text-white">
+    Dark
+  </span>
+</label>
    <section class="flex justify-center gap-6">
     <section id="p1" class="shadow rounded-2xl border text-blue border-gray-200  text-gray-700 hover:border-blue-500 ml-20  p-6">
        <h1 class="font-bold mb-5 text-2xl text-blue-500">Ethiopian law guidance System</h1>
@@ -21,7 +30,7 @@
           <li>🔐 User authentication & query history</li>
           <li>⚖️ Law recommendation engine</li>
     </ul>
-    <ul id="technologies" class="flex flex-wrap gap-2 text-black mb-4 text-sm rounded-2xl mt-25">
+    <ul id="technologies" class="flex flex-wrap gap-2 text-black mb-4 text-sm rounded-2xl mt-2">
         <li  class="rounded-2xl bg-blue-400 py-1 px-2 ">react</li>
         <li  class="rounded-2xl bg-blue-400 py-1 px-2 ">nestjs</li>
         <li  class="rounded-2xl bg-blue-400 py-1 px-2 ">postres</li>

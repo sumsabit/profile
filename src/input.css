@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-surface: #ffffff;
+  --color-text: #374151;
+
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+
+  --radius-button: 9999px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
